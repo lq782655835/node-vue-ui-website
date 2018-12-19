@@ -1,0 +1,193 @@
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#666;outline:0;}
+body{background:#fff;}
+a{color:#666;}
+a:hover { opacity: 0.7 }
+
+html, body { width: 100%; height: 100%; }
+
+body {
+  font-family: "PingFang-SC-Regular",Helvetica,Tahoma,Arial,"Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+
+.g-clearfix {
+  &:after {
+    display: block;
+    content: ' ';
+    clear: both;
+  }
+}
+
+.g-noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+code {
+  font-size: 14px;
+  font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
+  line-height: 1.5;
+}
+
+.g-head {
+  font-size: 30px;
+  color: #222222;
+  padding-top: 72px;
+  padding-bottom: 8px;
+  font-weight: 500;
+}
+.g-head-time {
+  font-size: 14px;
+  color: #666666;
+  padding-bottom: 32px;
+  font-weight: 400;
+}
+.g-title {
+  font-size: 30px;
+  color: #222222;
+  padding-top: 48px;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+.g-mtitle {
+  font-size: 20px;
+  color: #222222;
+  margin-bottom: 16px;
+}
+.g-stitle {
+  font-size: 14px;
+  color: #222222;
+}
+.g-mtext {
+  font-size: 14px;
+  color: #666666;
+}
+.g-smtext {
+  font-size: 12px;
+  color: #666666;
+}
+
+.g-sort {
+    width: 100%;
+    height: 100%;
+}
+.g-content {
+    margin-left: 240px;
+    height: 100%;
+}
+.g-page {
+  padding: 0 72px;
+}
+
+.readme {
+  box-sizing: border-box;
+  padding: 32px;
+  section {
+    color: #000;
+    // # 一级标题
+    h1 {
+      border-bottom: 1px solid #eaecef;
+      padding-bottom: 10px;
+      margin-bottom: 16px;
+      font-size: 32px;
+      font-weight: 600;
+    }
+    // ## 二级标题
+    h2 {
+      margin-bottom: 16px;
+      padding-bottom: 7px;
+      padding-top: 32px;
+      border-bottom: 1px solid #eaecef;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    // 描述文字
+    p { margin-bottom: 32px; font-size: 14px; color: #333; }
+    // * 列表
+    & > ul {
+      margin-bottom: 16px;
+      li {
+        font-size: 14px;
+        line-height: 2;
+      }
+      li:before {
+        display: inline-block;
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-radius: 2.5px;
+        background-color: #000;
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+    }
+
+    // ``高亮
+    & > p code, & > ul li code {
+      background-color: rgba(27, 31, 35, .05);
+      border-radius: 3px;
+      padding: 2px 5px;
+    }
+
+    // 表格
+    & > table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #fff;
+      font-size: 14px;
+      margin-bottom: 45px;
+      line-height: 1.5;
+      max-width: 880px;
+      th {
+        text-align: left;
+        white-space: nowrap;
+        color: #666;
+        font-weight: 400;
+      }
+      td, th {
+        border-bottom: 1px solid #d8d8d8;
+        padding: 15px;
+      }
+      td { color: #333; code { font-weight: 600; } }
+    }
+
+    // 代码容器
+    u-code-example,
+    .u-code-example {
+      // 运行容器
+      & > div:not([slot='code']) { padding-bottom: 16px; }
+      // 代码容器
+      & > div[slot="code"] { margin-bottom: 16px; }
+    }
+
+  }
+}
+
+// 所有代码块文案语法高亮修饰
+.hljs {
+  padding: 20px;
+  code { color: #000; font-size: 12px; }
+  &-tag { color: #00f; }
+  &-name {}
+  &-attr {}
+  &-string {}
+}
