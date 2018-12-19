@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.2.1",
+    "body-parser": "^1.18.3",
     "copy-webpack-plugin": "^4.5.3",
     "eslint-plugin-vue": "^4.7.1",
     "express": "^4.16.4",
