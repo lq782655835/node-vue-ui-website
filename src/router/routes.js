@@ -59,6 +59,10 @@ const routes = [
     {
         path: '/code',
         component: _import('code')
+    },
+    {
+        path: '/article',
+        component: _import('article/list')
     }
 ]
 

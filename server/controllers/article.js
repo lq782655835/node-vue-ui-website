@@ -19,4 +19,10 @@ ArticleController.prototype.getArticleById = (req, res, next) => {
         .catch(err => res.send(Utils.error(err)))
 }
 
+ArticleController.prototype.getArticleList = (req, res, next) => {
+    ArticleModel.find()
+        .then(data => res.send(Utils.success(data)))
+        .catch(err => res.send(Utils.error(err)))
+}
+
 module.exports = new ArticleController()

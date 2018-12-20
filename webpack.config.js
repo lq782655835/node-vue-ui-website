@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const Autoprefixer = require('autoprefixer')
 
 module.exports = {
+//   mode: process.env.NODE_ENV !== 'production',
   entry: {
     index: './src/index/index.js',
     main: './src/main/index.js'
@@ -95,7 +96,17 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     noInfo: true,
-    overlay: true
+    overlay: true,
+    hot: true,
+    inline: true,
+    open: true,
+    host: 'localhost',
+    port: 8080,
+    proxy: {
+      '/api': 'http://localhost:3001',
+      changeOrigin: true,
+    //   secure: false,
+    }
   },
   performance: {
     hints: false
