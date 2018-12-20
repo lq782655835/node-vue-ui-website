@@ -1,6 +1,6 @@
 # node-vue-ui-website
 
-> A Vue.js project
+> A Node-Vue.js project
 
 ## Build Setup
 

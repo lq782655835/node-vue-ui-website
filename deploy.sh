@@ -5,10 +5,9 @@ set -e
 
 git add -A
 git commit -m 'deploy'
-
 echo 'local commited'
 
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:lq782655835/node-checker.git master
-# echo 'remote commited'
+# 发布到 github
+git push -f https://github.com/lq782655835/node-vue-ui-website.git master
+echo 'remote commited'
 # cd -
