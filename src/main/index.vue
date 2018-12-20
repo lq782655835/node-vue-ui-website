@@ -20,7 +20,7 @@ import router from '@/router'
 export default {
     router,
     methods: {
-        toIndex () {
+        toIndex() {
             location.href = '/'
         }
     }

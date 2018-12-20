@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
+const ArticleController = require('./controllers/article')
 
-router.get('/', (req, res) => {
-    res.send('hello world')
-})
+router.post('/article', ArticleController.createNewArticle)
+router.get('/article/:id', ArticleController.getArticleById)
 
 module.exports = router

@@ -5,7 +5,7 @@
 <script>
 export default {
     methods: {
-        toMain () {
+        toMain() {
             location.href = '/main.html'
         }
     }

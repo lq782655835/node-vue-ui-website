@@ -9,11 +9,11 @@
 
 <script>
 export default {
-    data () {
+    data() {
         return {}
     },
     methods: {
-        HTMLEncode (html) {
+        HTMLEncode(html) {
             var temp = document.createElement('div')
             temp.textContent ? (temp.textContent = html) : (temp.innerText = html)
             var output = temp.innerHTML
