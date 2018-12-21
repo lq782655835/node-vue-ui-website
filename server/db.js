@@ -6,7 +6,7 @@ mongoose.connect(config.url)
 const db = mongoose.connection
 db.once('open', () => console.log(chalk.green('连接数据库成功')))
 
-db.on('error', (error) => {
+db.on('error', error => {
     console.error(chalk.red('Error in MongoDb connection: ' + error))
     mongoose.disconnect()
 })

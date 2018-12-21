@@ -1,6 +1,8 @@
 import axios from 'axios'
+const config = require('../../server/config')
 
 const service = axios.create({
+    baseURL: `http://localhost:${config.port}`, // api的base_url
     timeout: 300000 // 请求超时时间，原15000
 })
 

@@ -7,9 +7,11 @@
   "private": true,
   "scripts": {
     "github": "sh deploy.sh",
+    "dev": "npm run dev:fed & npm run serve",
+    "build": "npm run build:fed && npm run serve",
     "serve": "nodemon index.js",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "dev:fed": "cross-env NODE_ENV=development webpack-dev-server --hot",
+    "build:fed": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "lint": "eslint --ext .js,.vue src --fix",
     "format": "prettier --write './{src,server}/**/*.{js,vue,json}'"
   },
