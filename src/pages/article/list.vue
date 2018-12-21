@@ -1,6 +1,6 @@
 <template>
     <div class="article-list">
-        <div v-for="article in articleList" :key="article._id">{{ article._id }}/{{ article.title }}123123</div>
+        <div v-for="article in articleList" :key="article._id">{{ article._id }}/{{ article.title }}123</div>
     </div>
 </template>
 
