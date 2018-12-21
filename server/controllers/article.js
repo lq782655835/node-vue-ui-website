@@ -7,7 +7,16 @@ class ArticleController {
     }
 
     testMethod (req, res, next) {
-        res.send('hello world')
+        // res.cookie('cookie2', 'test cookie', { maxAge: 900000, httpOnly: true }) // 设置cookie。from express
+        // // res.send(req.headers.cookie) // String 原生node req.headers
+        // res.send(req.cookies.cookie1) // Object cookie-parse包提供
+        if (req.session.user) {
+            var user=req.session.user
+            res.send('你好'+user+'，欢迎来到我的家园。')
+        } else {
+            req.session.user = 'leo'
+            res.send('你还没有登录，先登录下再试试！')
+        }
     }
 
     createNewArticle (req, res, next) {

@@ -1,6 +1,8 @@
 const path = require('path')
 const logger = require('morgan')
 const bodyParse = require('body-parser')
+var cookieParser = require('cookie-parser')
+var session = require('express-session')
 const express = require('express')
 const history = require('connect-history-api-fallback')
 
@@ -19,7 +21,7 @@ app.all('*', (req, res, next) => {
     res.header('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS')
     res.header('Access-Control-Allow-Credentials', true) // 可以带cookies
     res.header('X-Powered-By', 'Express')
-    if (req.method == 'OPTIONS') {
+    if (req.method === 'OPTIONS') {
         res.sendStatus(200)
     } else {
         next()
@@ -29,6 +31,13 @@ app.all('*', (req, res, next) => {
 app.use(logger()) // 记录日志
 app.use(bodyParse.json())
 app.use(bodyParse.urlencoded({ extended: true }))
+app.use(cookieParser('leo1'))
+app.use(session({
+    secret: 'leo1', // 与cookieParser中的一致
+    resave: true,
+    saveUninitialized: true
+}))
+
 app.use('/api', router)
 // 没匹配到的路径链接到index.html
 app.use(history())
