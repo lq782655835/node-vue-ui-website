@@ -32,11 +32,13 @@ app.use(logger()) // 记录日志
 app.use(bodyParse.json())
 app.use(bodyParse.urlencoded({ extended: true }))
 app.use(cookieParser('leo1'))
-app.use(session({
-    secret: 'leo1', // 与cookieParser中的一致
-    resave: true,
-    saveUninitialized: true
-}))
+app.use(
+    session({
+        secret: 'leo1', // 与cookieParser中的一致
+        resave: true,
+        saveUninitialized: true
+    })
+)
 
 app.use('/api', router)
 // 没匹配到的路径链接到index.html
