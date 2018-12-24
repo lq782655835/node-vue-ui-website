@@ -9,8 +9,8 @@ Modal组件
 ```vue
 <template>
 <div>
-    <ai-button @click="isShow = true">Modal</ai-button>
-    <ai-modal v-if="isShow" title="标题提示" @ok="isShow = false" width="400px">弹窗而已</ai-modal>
+    <u-button @click="isShow = true">Modal</u-button>
+    <u-modal v-if="isShow" title="标题提示" @ok="isShow = false" width="400px">弹窗而已</u-modal>
 </div>
 </template>
 <script>
@@ -24,8 +24,8 @@ export default {
 
 更多示例
 ```html
-<ai-modal v-show="false" @confirm="" @cancel=""></ai-modal>
-<ai-modal v-show="false" @ok="" okText="我知道了"></ai-modal>
+<u-modal v-show="false" @confirm="" @cancel=""></u-modal>
+<u-modal v-show="false" @ok="" okText="我知道了"></u-modal>
 ```
 
 ## 属性配置

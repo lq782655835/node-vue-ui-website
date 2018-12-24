@@ -5,7 +5,7 @@
  <template>
   <div class="demo-block">
     <div class="demo-row">
-      <ai-select v-model="select.value1" :list="aiselectlist" size="small" class="ai-select"/>
+      <u-select v-model="select.value1" :list="aiselectlist" size="small" class="u-select"/>
       value: {{ select.value1 }}
     </div>
   </div>

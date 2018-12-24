@@ -3,10 +3,10 @@
 ## 如何使用
 
 ```html
-<ai-link href="http://www.baidu.com" target="_blank">外链百度</ai-link>
+<u-link href="http://www.baidu.com" target="_blank">外链百度</u-link>
 ```
 ```html
-<ai-link href="http://www.baidu.com" disabled>禁用外链</ai-link>
+<u-link href="http://www.baidu.com" disabled>禁用外链</u-link>
 ```
 
 ## 使用参数
@@ -23,7 +23,7 @@ disabled | 是否禁用, 禁用后不响应click事件 | Boolean | true/false | 
 ## Events
 
 * `$listeners`
- 
+
 监听所有`<a>`元素的事件
 
 * `@click`

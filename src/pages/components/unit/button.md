@@ -3,9 +3,9 @@
 ```vue
 <template>
   <div>
-    <ai-button size="s" color="white" @click="buttonClick">按钮</ai-button>
-    <ai-button size="m" @click="buttonClick">按钮</ai-button>
-    <ai-button size="l" color="primary" disabled @click="buttonClick">按钮</ai-button>
+    <u-button size="s" color="white" @click="buttonClick">按钮</u-button>
+    <u-button size="m" @click="buttonClick">按钮</u-button>
+    <u-button size="l" color="primary" disabled @click="buttonClick">按钮</u-button>
   </div>
 </template>
 <script>

@@ -1,6 +1,8 @@
 <template>
     <div class="article-list">
         <div v-for="article in articleList" :key="article._id">{{ article._id }}/{{ article.title }}123</div>
+        <u-link>click me</u-link>
+        <u-button color="primary">click me</u-button>
     </div>
 </template>
 

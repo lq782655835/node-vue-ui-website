@@ -6,7 +6,7 @@
 ```vue
 <template>
     <div>
-        <ai-button size="m" @click="btn">toast</ai-button>
+        <u-button size="m" @click="btn">toast</u-button>
     </div>
 </template>
 

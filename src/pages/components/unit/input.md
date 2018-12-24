@@ -2,7 +2,7 @@
 ## 如何使用
 ```vue
 <template>
-  <ai-input v-model="inputValue"></ai-input>
+  <u-input v-model="inputValue"></u-input>
 </template>
 
 <script>

@@ -5,15 +5,15 @@
 
 ```vue
 <template>
-    <ai-table :list="tableData" @click="rowClick" style="max-width: 400px;">
+    <u-table :list="tableData" @click="rowClick" style="max-width: 400px;">
         <template slot-scope="{row, index}">
-            <ai-table-column label="ID">{{index}}</ai-table-column>
-            <ai-table-column label="Name">{{row.name}}</ai-table-column>
-            <ai-table-column label="Date">
-                <ai-button size="s" @click.stop="btn(row.date)">日期</ai-button>
-            </ai-table-column>
+            <u-table-column label="ID">{{index}}</u-table-column>
+            <u-table-column label="Name">{{row.name}}</u-table-column>
+            <u-table-column label="Date">
+                <u-button size="s" @click.stop="btn(row.date)">日期</u-button>
+            </u-table-column>
         </template>
-    </ai-table>
+    </u-table>
 </template>
 
 <script>
