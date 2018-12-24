@@ -21,6 +21,11 @@ class ArticleController {
 
     createNewArticle (req, res, next) {
         let params = req.body
+        let isRequire = params.title && params.content
+        if (!isRequire) {
+            res.send(Utils.error('请将必须参数填写完整'))
+            return
+        }
         ArticleModel.create(params)
             .then(data => res.send(Utils.success(data)))
             .catch(err => res.send(Utils.error(err)))
@@ -35,6 +40,13 @@ class ArticleController {
 
     getArticleList (req, res, next) {
         ArticleModel.find()
+            .then(data => res.send(Utils.success(data)))
+            .catch(err => res.send(Utils.error(err)))
+    }
+
+    delArticleById (req, res, next) {
+        let id = req.params.id
+        ArticleModel.findByIdAndDelete(id)
             .then(data => res.send(Utils.success(data)))
             .catch(err => res.send(Utils.error(err)))
     }

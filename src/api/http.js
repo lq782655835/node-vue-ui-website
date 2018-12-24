@@ -8,18 +8,17 @@ const service = axios.create({
 
 // request拦截器
 service.interceptors.request.use(
-    config => {
-        if (config.method === 'post' || config.method === 'put' || config.method === 'delete') {
-            config.headers['Content-Type'] = 'application/json'
-            if (config.type === 'form') {
-                config.headers['Content-Type'] = 'multipart/form-data'
+    request => {
+        if (request.method === 'post' || request.method === 'put' || request.method === 'delete') {
+            request.headers['Content-Type'] = 'application/json'
+            if (request.type === 'form') {
+                request.headers['Content-Type'] = 'multipart/form-data'
             } else {
                 // 序列化
-                config.data = JSON.stringify(config.data)
+                request.data = JSON.stringify(request.data)
             }
         }
-
-        return config
+        return request
     },
     error => {
         Promise.reject(error)
@@ -34,7 +33,7 @@ service.interceptors.response.use(
         if (res.success) {
             return res.detail // 直接返回数据
         } else {
-            !response.config.error && alert(res.message, 'error') // 错误统一报出
+            !response.config.error && alert(res.message || res.detail, 'error') // 错误统一报出
             return Promise.reject(res)
         }
     },

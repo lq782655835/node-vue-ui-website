@@ -63,6 +63,10 @@ const routes = [
     {
         path: '/article',
         component: _import('article/list')
+    },
+    {
+        path: '/article/modify',
+        component: _import('article/modify')
     }
 ]
 
