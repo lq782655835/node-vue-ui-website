@@ -5,3 +5,6 @@ import 'highlight.js/styles/github.css'
 
 Vue.use(VueRouter)
 Vue.use(YIUI)
+
+// Promise Catch不报错
+window.addEventListener('unhandledrejection', e => e.preventDefault())

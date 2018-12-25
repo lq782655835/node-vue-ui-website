@@ -9,6 +9,7 @@ const service = axios.create({
 // request拦截器
 service.interceptors.request.use(
     request => {
+        console.log(request)
         if (request.method === 'post' || request.method === 'put' || request.method === 'delete') {
             request.headers['Content-Type'] = 'application/json'
             if (request.type === 'form') {

@@ -8,7 +8,7 @@
                     <u-table-column label="标题" width="100px">{{ row.title }}</u-table-column>
                     <u-table-column label="作者" width="100px">{{ row.author }}</u-table-column>
                     <u-table-column label="操作" width="60px">
-                        <u-link color="primary">编辑</u-link>
+                        <u-link color="primary" :to="`/article/modify?id=${row._id}`">编辑</u-link>
                         <u-link color="primary" @click="del(row._id)">删除</u-link>
                     </u-table-column>
                 </template>

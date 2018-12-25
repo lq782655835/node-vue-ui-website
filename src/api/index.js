@@ -18,15 +18,16 @@ export const deleteArticleById = (id) =>
         method: 'delete'
     })
 
-export const editArticleById = (id) =>
+export const editArticleById = (data) =>
     http({
-        url: `/api/article/${id}`,
-        method: 'post'
+        url: `/api/article/${data.id}`,
+        method: 'post',
+        data
     })
 
 export const addArticle = (data) =>
     http({
         url: `/api/article`,
         method: 'post',
-        data: data
+        data
     })

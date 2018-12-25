@@ -26,15 +26,31 @@ export default {
             return this.$route.query.id
         }
     },
+    mounted() {
+        this.id && this.getArticleDetail()
+    },
     methods: {
+        getArticleDetail() {
+            getArticleById(this.id).then((data) => {
+                this.title = data.title
+                this.content = data.content
+            })
+        },
         modify() {
             this.id ? this.edit() : this.add()
         },
         add() {
-            addArticle(this.data).then(data => alert('添加成功'))
+            addArticle({
+                title: this.title,
+                content: this.content
+            }).then(data => alert('添加成功'))
         },
         edit() {
-
+            editArticleById({
+                id: this.id,
+                title: this.title,
+                content: this.content
+            }).then(data => alert('更新成功'))
         }
     }
 }
