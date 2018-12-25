@@ -31,3 +31,7 @@ npm run dev
 ![image](https://user-images.githubusercontent.com/6310131/50412030-c609be80-083f-11e9-9a87-01216d9b997c.png)
 
 ![image](https://user-images.githubusercontent.com/6310131/50412062-0bc68700-0840-11e9-813f-c9fcde54312a.png)
+
+## License
+
+The code is distributed under the [MIT](http://opensource.org/licenses/MIT) license
