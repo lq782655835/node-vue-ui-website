@@ -14,11 +14,11 @@ export default {
         html: String,
         type: String
     },
-    mounted() {
+    mounted () {
         hljs.highlightBlock(this.$refs.code)
     },
     methods: {
-        HTMLEncode() {
+        HTMLEncode () {
             var temp = document.createElement('div')
             temp.textContent ? (temp.textContent = this.html) : (temp.innerText = this.html)
             var output = temp.innerHTML

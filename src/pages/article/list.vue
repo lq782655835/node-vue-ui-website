@@ -20,20 +20,22 @@
 <script>
 import { getArticleList, deleteArticleById } from '@/api'
 export default {
-    data() {
+    data () {
         return {
             articleList: []
         }
     },
-    created() {
+    created () {
         this.getAll()
     },
     methods: {
-        getAll() {
-            getArticleList().then(data => this.articleList = data)
+        getAll () {
+            getArticleList().then(data => (this.articleList = data))
         },
-        del(id) {
-            deleteArticleById(id).then(data => this.getAll()).catch(error => console.error(error))
+        del (id) {
+            deleteArticleById(id)
+                .then(data => this.getAll())
+                .catch(error => console.error(error))
         }
     }
 }

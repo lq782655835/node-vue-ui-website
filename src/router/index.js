@@ -8,7 +8,7 @@ const router = new VueRouter({
     // mode: 'history',
     routes,
     linkActiveClass: 'is-active',
-    scrollBehavior(to, from, savedPosition) {
+    scrollBehavior (to, from, savedPosition) {
         if (savedPosition) {
             return savedPosition
         } else {

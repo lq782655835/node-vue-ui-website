@@ -34,7 +34,7 @@ export default {
         CodeReview
     },
     computed: {
-        html() {
+        html () {
             return `
                 <template>
                     <label :class="{'disabled':isDisabled}" :data-value="value" class="ai-radio">

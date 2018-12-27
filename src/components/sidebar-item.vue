@@ -14,21 +14,21 @@ export default {
     props: {
         item: Object
     },
-    data() {
+    data () {
         return {
             show: false
         }
     },
-    created() {},
+    created () {},
     methods: {
-        itemClick() {
+        itemClick () {
             if (this.item.children) {
                 this.toggle()
             } else {
                 this.$router.push(this.item.path)
             }
         },
-        toggle() {
+        toggle () {
             this.show = !this.show
         }
     }

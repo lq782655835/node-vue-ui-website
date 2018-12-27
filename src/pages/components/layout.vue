@@ -5,13 +5,13 @@
 <script>
 export default {
     props: {},
-    data() {
+    data () {
         return {}
     },
     components: {},
     computed: {},
     watch: {},
-    created() {},
+    created () {},
     methods: {}
 }
 </script>

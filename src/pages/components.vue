@@ -10,7 +10,7 @@ import SideBar from '@/components/sidebar.vue'
 import Routes from '@/router/routes'
 
 export default {
-    data() {
+    data () {
         const CptRoutes = Routes.find(r => r.path === '/components')
         return {
             CptRoutes: CptRoutes.children

@@ -9,7 +9,7 @@ export default {
     props: {
         items: Array
     },
-    data() {
+    data () {
         return {}
     },
     components: {
@@ -17,7 +17,7 @@ export default {
     },
     computed: {},
     watch: {},
-    created() {}
+    created () {}
 }
 </script>
 

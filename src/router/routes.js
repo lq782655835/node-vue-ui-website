@@ -67,6 +67,10 @@ const routes = [
     {
         path: '/article/modify',
         component: _import('article/modify')
+    },
+    {
+        path: '/article/demo',
+        component: _import('article/demo')
     }
 ]
 
