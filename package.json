@@ -43,7 +43,7 @@
     "prettier": "^1.15.2",
     "vue": "^2.5.11",
     "vue-router": "^3.0.1",
-    "yi-ui": "^0.1.1"
+    "yi-ui": "0.2.8"
   },
   "browserslist": [
     "> 1%",
@@ -51,7 +51,7 @@
     "not ie <= 8"
   ],
   "devDependencies": {
-    "@vusion/md-vue-loader": "^0.2.0",
+    "@vusion/md-vue-loader": "^1.0.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",

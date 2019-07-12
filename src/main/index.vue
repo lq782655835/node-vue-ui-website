@@ -1,13 +1,13 @@
 <template>
     <div class="main">
         <div class="g-top">
-            <ul class="g-menubar g-clearfix">
+            <!-- <ul class="g-menubar g-clearfix">
                 <li class="g-menu" @click="toIndex">首页</li>
                 <router-link to="/guide" class="g-menu">新手指南</router-link>
                 <router-link to="/components" class="g-menu">组件展示</router-link>
                 <router-link to="/question" class="g-menu">问题解释</router-link>
                 <router-link to="/code" class="g-menu">代码设计</router-link>
-            </ul>
+            </ul> -->
             <div class="g-logo" @click="toIndex"><img src="/static/logo.svg" />NetEase-AI UI</div>
         </div>
         <router-view></router-view>
