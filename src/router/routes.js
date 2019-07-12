@@ -22,10 +22,10 @@ const routes = [
                 path: '/components/unit',
                 component: _import('components/unit'),
                 children: [
-                    // { name: 'Badge', path: '/components/unit/badge', component: _md('components/unit/badge') },
                     { name: 'Link', path: '/components/unit/link', component: _md('components/unit/link') },
-                    { name: 'Button', path: '/components/unit/button', component: _md('components/unit/button') }
-                    // { name: 'Input', path: '/components/unit/input', component: _md('components/unit/input') },
+                    { name: 'Button', path: '/components/unit/button', component: _md('components/unit/button') },
+                    { name: 'Icon', path: '/components/unit/icon', component: _md('components/unit/icon') },
+                    { name: 'Input', path: '/components/unit/input', component: _md('components/unit/input') }
                     // { name: 'Select', path: '/components/unit/select', component: _md('components/unit/select') },
                     // { name: 'Table', path: '/components/unit/table', component: _md('components/unit/table') },
                     // { name: 'Modal', path: '/components/unit/modal', component: _md('components/unit/modal') },
