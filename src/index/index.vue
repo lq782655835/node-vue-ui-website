@@ -6,7 +6,7 @@
 export default {
     methods: {
         toMain () {
-            location.href = '/main.html'
+            location.href = './main.html'
         }
     }
 }
@@ -18,6 +18,6 @@ export default {
     width: 100%;
     height: 100%;
     cursor: pointer;
-    background: url(/static/index.jpg) no-repeat center center/contain;
+    background: url(../../static/index.jpg) no-repeat center center/contain;
 }
 </style>
