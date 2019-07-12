@@ -8,7 +8,7 @@
                 <router-link to="/question" class="g-menu">问题解释</router-link>
                 <router-link to="/code" class="g-menu">代码设计</router-link>
             </ul> -->
-            <div class="g-logo" @click="toIndex"><img src="/static/logo.svg" />NetEase-AI UI</div>
+            <div class="g-logo" @click="toIndex"><img src="../../static/logo.svg" />NetEase-AI UI</div>
         </div>
         <router-view></router-view>
     </div>

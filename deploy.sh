@@ -3,8 +3,10 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-git add -A
-git commit -m 'deploy'
+# 生成静态文件
+npm run build:fed
+
+git commit -am 'deploy'
 echo 'local commited'
 
 # 发布到 github

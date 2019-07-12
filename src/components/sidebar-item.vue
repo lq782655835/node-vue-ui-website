@@ -1,7 +1,7 @@
 <template>
     <div class="item-wrap g-noselect">
         <div class="item" @click="itemClick">
-            <img :src="`/static/svg/${item.icon}`" class="item-icon" /> <span class="item-name g-noselect">{{ item.name }}</span>
+            <img :src="`../../static/svg/${item.icon}`" class="item-icon" /> <span class="item-name g-noselect">{{ item.name }}</span>
         </div>
         <div v-if="item.children" v-show="show" class="sub-wrap">
             <router-link v-for="link in item.children" :key="link.path" class="sub" :to="link.path">{{ link.name }}</router-link>

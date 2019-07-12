@@ -92,11 +92,11 @@ export default {}
         height: 16px;
         vertical-align: middle;
         margin-right: 8px;
-        background: url(/static/svg/folder.svg) no-repeat center/16px;
+        background: url(../../static/svg/folder.svg) no-repeat center/16px;
     }
     .doc {
         @extend .folder;
-        background-image: url(/static/svg/doc.svg);
+        background-image: url(../../static/svg/doc.svg);
         background-size: 14px;
     }
     .search {
@@ -108,7 +108,7 @@ export default {}
         box-sizing: border-box;
         display: block;
         text-indent: 16px;
-        background: url(/static/svg/search.svg) no-repeat calc(100% - 16px) center/16px;
+        background: url(../../static/svg/search.svg) no-repeat calc(100% - 16px) center/16px;
     }
     .search-btn {
         float: right;
