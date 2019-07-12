@@ -8,7 +8,7 @@
   "scripts": {
     "github": "sh deploy.sh",
     "dev": "npm run dev:fed & npm run serve",
-    "build": "npm run build:fed",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
     "test": "mocha --watch --recursive",
     "serve": "nodemon index.js",
     "serve:debug": "nodemon --inspect-brk=5858 index.js",

@@ -13,7 +13,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, './dist'),
-        publicPath: '/',
+        publicPath: '/node-vue-ui-website/',
         filename: '[name].js'
     },
     module: {
