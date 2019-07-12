@@ -8,7 +8,7 @@
   "scripts": {
     "github": "sh deploy.sh",
     "dev": "npm run dev:fed & npm run serve",
-    "build": "npm run build:fed && npm run serve",
+    "build": "npm run build:fed",
     "test": "mocha --watch --recursive",
     "serve": "nodemon index.js",
     "serve:debug": "nodemon --inspect-brk=5858 index.js",
@@ -19,7 +19,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format && npm run lint && git add ."
+      "pre-commit": "npm run format && npm run lint"
     }
   },
   "dependencies": {
